@@ -1,4 +1,4 @@
-const Project = ({title, url, github, technique, fonctionnelle}) => {
+const Project = ({ title, url, github, technique, fonctionnelle }) => {
   return (
     <div className="content">
       <div className="content-part">
@@ -7,30 +7,24 @@ const Project = ({title, url, github, technique, fonctionnelle}) => {
           <li>
             URL d&apos;accès :
             <a href={url} target="_blank" rel="noreferrer">
-                {url}
+              {url}
             </a>
           </li>
           <li>
             Lien du dépôt GitHub :
             <a href={github} target="_blank" rel="noreferrer">
-                {github}
+              {github}
             </a>
           </li>
           <li>
             Documentation technique :
-            <a
-              href={technique}
-              target="_blank" rel="noreferrer"
-            >
+            <a href={technique} target="_blank" rel="noreferrer">
               Accéder
             </a>
           </li>
           <li>
             Documentation fonctionnelle :
-            <a
-              href={fonctionnelle}
-              target="_blank" rel="noreferrer"
-            >
+            <a href={fonctionnelle} target="_blank" rel="noreferrer">
               Accéder
             </a>
           </li>

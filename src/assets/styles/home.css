@@ -1,88 +1,49 @@
-/* .App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 0.01s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
-
-.App-header {
-  background-color: pink;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}
-
-.App-link {
-  color: green;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-html{
-    scroll-behavior: smooth;
-}
-.max-width{
+.max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
 
-.home{
+.home {
   display: flex;
-  background: url("banner.jpg") no-repeat center;
+  background: url("../img/banner.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   color: #fff;
   min-height: 500px;
-  font-family: 'Unbuntu', sans-serif;
+  font-family: "Unbuntu", sans-serif;
 }
-.home .max-width{
+.home .max-width {
   margin: auto 0 auto 40px;
 }
-.home .home-content .text-1{
+.home .home-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2{
+.home .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .home-content .text-3{
+.home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-content .text-3 span {
   color: crimson;
   font-weight: 500;
 }
-.home .home-content a{
+.home .home-content a {
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -93,37 +54,44 @@ html{
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+.home .home-content a:hover {
   color: crimson;
   background: none;
 }
 
 /* Styles similaires */
-section{
+section {
   padding: 100px 0;
 }
-.about, .services, .skills, .teams, .contact, .e4, .e5, footer{
-  font-family: 'Poppins', sans-serif;
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+.e4,
+.e5,
+footer {
+  font-family: "Poppins", sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-section .title{
+section .title {
   position: relative;
   text-align: center;
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-section .title::before{
+section .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -133,7 +101,7 @@ section .title::before{
   background: #111;
   transform: translateX(-50%);
 }
-section .title::after{
+section .title::after {
   position: absolute;
   bottom: -12px;
   left: 50%;
@@ -145,33 +113,33 @@ section .title::after{
 }
 
 /* Style section à propos */
-.about .title::after{
+.about .title::after {
   content: "qui suis-je";
 }
-.about .about-content .left{
+.about .about-content .left {
   width: 45%;
 }
-.about .about-content .left img{
+.about .about-content .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
-.about .about-content .right{
+.about .about-content .right {
   width: 55%;
 }
-.about .about-content .right .text{
+.about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+.about .about-content .right .text span {
   color: crimson;
 }
-.about .about-content .right p{
+.about .about-content .right p {
   text-align: justify;
 }
-.about .about-content .right a{
+.about .about-content .right a {
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -183,46 +151,49 @@ section .title::after{
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.about .about-content .right a:hover {
   color: crimson;
   background: none;
 }
 
 /* Style section e5 */
-.e5{
-  padding-top: 0!important;
+.e5 {
+  padding-top: 0 !important;
 }
-@media (max-width: 800px){
-  .e5 .max-width .content{
-      flex-direction: column;
+@media (max-width: 800px) {
+  .e5 .max-width .content {
+    flex-direction: column;
   }
-  .e5 .max-width .content .content-left{
-      margin-bottom: 30px;
+  .e5 .max-width .content .content-left {
+    margin-bottom: 30px;
   }
 }
-.e5 .title::after{
+.e5 .title::after {
   content: "mes projets scolaires";
 }
-.e5 .content{
+.e5 .content {
   text-align: center;
   margin-bottom: 2rem;
 }
-.e5 .content a{
+.e5 .content a {
   text-decoration: none;
   color: #000;
   font-weight: 600;
 }
-.e5 .content a:hover{
+.e5 .content a:hover {
   background: none;
   color: crimson;
 }
-.e5 .content .content-left, .e5 .content .content-right{
+.e5 .content .content-left,
+.e5 .content .content-right {
   text-align: center;
 }
-.e5 .content ul, .e5 .content ul{
+.e5 .content ul,
+.e5 .content ul {
   list-style-type: none;
 }
-.e5 .content .content-left li, .e5 .content .content-right li{
+.e5 .content .content-left li,
+.e5 .content .content-right li {
   margin: 15px 0;
   list-style-type: none;
 }
